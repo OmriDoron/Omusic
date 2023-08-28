@@ -44,8 +44,7 @@ def main():
     print(f"URL of the first video in search results: {video_url}")
 
     # url input from user
-    yt = YouTube(
-        str(video_url))
+    yt = YouTube(str(video_url))
 
     # extract only audio
     video = yt.streams.filter(only_audio=True).first()
